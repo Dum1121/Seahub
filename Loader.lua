@@ -10,5 +10,6 @@ for i,v in Projects do
   if v ~= GameId then
     continue
   end
-  loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/".. i ..".lua"))()
+  Scriptid = i
+  loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/e65dff26834f09aa1eb5c3900856601f.lua"))()
 end
