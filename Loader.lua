@@ -1,4 +1,4 @@
-local Projects = {
+local Projects = { -- Luarmor ScriptId = GameId ( setclipboard(game.GameId) )
   ["d326a31108c2d5f2e4a775eedf97105b"] = 10321202755
 }
 
