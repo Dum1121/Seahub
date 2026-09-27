@@ -3,7 +3,8 @@ local Projects = {
 }
 
 repeat wait() until game:IsLoaded()
-
+local Loader = "e65dff26834f09aa1eb5c3900856601f"
+local API = "api.luarmor.net"
 local GameId = game.GameId
 
 for i,v in Projects do
@@ -11,5 +12,5 @@ for i,v in Projects do
     continue
   end
   Scriptid = i
-  loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/e65dff26834f09aa1eb5c3900856601f.lua"))()
+  loadstring(game:HttpGet("https://".. API .."/files/v4/loaders/".. Loader ..".lua"))()
 end
