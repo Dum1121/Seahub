@@ -12,5 +12,9 @@ for i,v in Projects do
     continue
   end
   Scriptid = i
+  if script_key then
+    loadstring(game:HttpGet("https://".. API .."/files/v4/loaders/".. Scriptid ..".lua"))()
+  else
   loadstring(game:HttpGet("https://".. API .."/files/v4/loaders/".. Loader ..".lua"))()
+  end
 end
